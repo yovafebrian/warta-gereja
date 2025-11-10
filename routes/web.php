@@ -10,4 +10,4 @@ Route::get('/', function () {
 Route::get('/warta', function () {
     $latestWarta = Warta::latest()->first();
     return view('warta', compact('latestWarta'));
-});
+})->name('warta.latest'); // Tambahkan ini
