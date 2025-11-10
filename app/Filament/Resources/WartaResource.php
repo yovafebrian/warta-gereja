@@ -44,7 +44,9 @@ class WartaResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('judul')->label('Judul'),
+                Tables\Columns\TextColumn::make('tanggal')->date()->label('Tanggal'),
+                Tables\Columns\TextColumn::make('file_path')->label('File'),
             ])
             ->filters([
                 //

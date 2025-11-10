@@ -46,7 +46,7 @@
                 Scan untuk Warta Terbaru
               </p>
               <div class="inline-block p-2 bg-white border rounded-lg">
-                {!! \SimpleSoftwareIO\QrCode\Facades\QrCode::size(120)->generate(route('warta.latest')) !!}
+                {!! \SimpleSoftwareIO\QrCode\Facades\QrCode::size(120)->generate(route('warta.redirect')) !!}
               </div>
             </div>
 
